@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kanit:wght@200;300;400;500;600&family=Lato:wght@400;700;900&family=Lobster+Two:wght@700&family=Montserrat:ital,wght@0,500;0,600;1,600&family=Poppins:wght@200;400;500;600;800&family=Satisfy&display=swap"
+    rel="stylesheet" />
+  <title>Amakart</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>AmaKart</h1>
+    </div>
+    <div class="searchbox">
+      <input type="text" name="items" id="searchItem" placeholder="Search for products" /><i
+        class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="cart">
+      <a href="cartPage.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i>Cart</a>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="smartphone.html">Smartphones</a></li>
+      <li><a href="#">Laptop</a></li>
+      <li><a href="#">Headset</a></li>
+      <li><a href="#">Smartwatches</a></li>
+      <li><a href="#">Keyboard & Mouse</a></li>
+    </ul>
+  </nav>
+  <div class="banner-area">
+    <img src="./banner/2.png" class="banner" alt="" />
+    <img src="./banner/1.png" alt="" class="banner" />
+    <img src="./banner/3.png" alt="" class="banner" />
+    <button class="button display-left" onclick="plusDivs(-1)">
+      &#10094;
+    </button>
+    <button class="button display-right" onclick="plusDivs(+1)">
+      &#10095;
+    </button>
+  </div>
+  <div class="recommend-section">
+    <div class="phone-section">
+      <div class="phone-section-head">
+        <h2>Recommended Smartphones for You</h2>
+        <a href="#">View all</a>
+      </div>
+      <div class="phones">
+        <div class="phone phone1">
+          <img src="./Smartphones/oppo_a17k_black-removebg-preview.png"alt="" style="width: 12.5rem;height: 12.5rem;"/>
+          <h3><a href="#">Oppo A17 (Black)</a></h3>
+          <p>4.4<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;12,499</h4>
+        </div>
+        <div class="phone">
+          <!-- <img src="./Smartphones/oneplus_9r_blue-removebg-preview.png" alt="" /> -->
+          <img src="./Smartphones/oneplus_9r_blue-removebg-preview.png" alt=""  style="width: 11rem;height: 10rem;">
+          <h3><a href="#">OnePlus 9r (Blue)</a></h3>
+          <p>4.6<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;33,990</h4>
+        </div>
+        <div class="phone">
+          <img src="./Smartphones/poco_c50-removebg-preview.png" alt=""  style="width: 12rem;height: 12rem;" />
+          <h3><a href="#">POCO C50</a></h3>
+          <p>4.2<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;5749</h4>
+        </div>
+        <div class="phone">
+          <img src="./Smartphones/samsung_galaxy_m33_grey-removebg-preview.png" alt=""  style="width: 13rem;height: 13rem;"/>
+          <h3><a href="#">Smasung Galaxy M33 (grey)</a></h3>
+          <p>4.8<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;18,532</h4>
+        </div>
+        <div class="phone">
+          <img src="./Smartphones/vivo_y01_black-removebg-preview.png" alt=""  style="width: 12rem;height: 12rem;"/>
+          <h3><a href="#">Vivo Y01 (Black) </a></h3>
+          <p>4.3<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;7,999</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="border">
+      <div class="line"></div>
+    </div>
+
+    <div class="laptop-section">
+      <div class="laptop-section-head">
+        <h2>Top Deals on laptops</h2>
+        <a href="#">View all</a>
+      </div>
+      <div class="laptops">
+        <div class="laptop">
+          <img src="./laptops/asus gaming laptop.jpg" alt="" />
+          <h3><a href="#">Asus Gaming Laptop</a></h3>
+          <p>4.4<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;12,499</h4>
+        </div>
+        <div class="laptop">
+          <img src="./laptops/asus vivobook.jpg" alt="" />
+          <h3><a href="#">Asus Vivobook</a></h3>
+          <p>4.4<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;12,499</h4>
+        </div>
+        <div class="laptop">
+          <img src="./laptops/dell vostro core i3 10th gen.jpg" alt="" />
+          <h3><a href="#">Dell Vostro Core </a></h3>
+          <p>4.4<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;12,499</h4>
+        </div>
+        <div class="laptop">
+          <img src="./laptops/hp 14s intel core.jpg" alt="" />
+          <h3><a href="#">hp 14s intel core</a></h3>
+          <p>4.4<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;12,499</h4>
+        </div>
+        <div class="laptop">
+          <img src="./laptops/lenovo ideappad slim 3.jpg" alt="" />
+          <h3><a href="#">Lenovo Ideapad slim 3 </a></h3>
+          <p>4.4<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;12,499</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="border">
+      <div class="line"></div>
+    </div>
+
+    <div class="headset-section">
+      <div class="headset-section-head">
+        <h2>Recommended Smartphones for You</h2>
+        <a href="#">View all</a>
+      </div>
+      <div class="headsets">
+        <div class="headset phone1">
+          <img src="./earphones/beats_by_dr_dre_900_00109_01_studio_wireless_headphones_red_1016369.jpg" alt="" />
+          <h3><a href="#">Beats Wireless</a></h3>
+          <p>4.4<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;12,499</h4>
+        </div>
+        <div class="headset">
+          <img src="./earphones/boat rockerz 400 On-ear bluetooth headphones review.jpg" alt="" />
+          <h3><a href="#">Boat rockerz 400</a></h3>
+          <p>4.4<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;12,499</h4>
+        </div>
+        <div class="headset">
+          <img src="./earphones/microsoft_5f4_00010_xbox_one_stereo_headset_1319021.jpg" alt="" />
+          <h3><a href="#">Microsoft Xbox</a></h3>
+          <p>4.4<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;12,499</h4>
+        </div>
+        <div class="headset">
+          <img src="./earphones/th (2).jpg" alt="" />
+          <h3><a href="#">Smasung Galaxy M33 (grey)</a></h3>
+          <p>4.4<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;12,499</h4>
+        </div>
+        <div class="headset">
+          <img src="./earphones/th (4).jpg" alt="" />
+          <h3><a href="#">Vivo Y01 (Black) </a></h3>
+          <p>4.4<i class="fa-sharp fa-solid fa-star"></i></p>
+          <h4>&#8377;12,499</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="border">
+      <div class="line"></div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="upper-part">
+      <div class="about">
+        <p class="head">About</p>
+        <ul>
+          <li>Contact Us</li>
+          <li>About Us</li>
+          <li>Corporate Information</li>
+          <li>Press</li>
+        </ul>
+      </div>
+      <div class="help">
+        <p class="head">Help</p>
+        <ul>
+          <li>Payments</li>
+          <li>Shipping</li>
+          <li>Cancellation</li>
+          <li>Returns</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div class="policy">
+        <p class="head">Policy</p>
+        <ul>
+          <li>Return Policy</li>
+          <li>Terms of Use</li>
+          <li>Security</li>
+          <li>Privacy</li>
+        </ul>
+      </div>
+      <div class="social">
+        <p class="head">Social</p>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Youtube</li>
+        </ul> 
+      </div>
+      <div class="divison-line">
+        <div class="inner-divison-line"></div>
+      </div>
+      <div class="mail">
+        <p class="head">Mail Us:</p>
+        <ul>
+          <li>Amakart Internet Private Limited,Buildings Alyssa, Begonia & Clove Embassy Tech Village,Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India</li>
+        </ul>
+      </div>
+      <div class="address">
+        <p class="head">Registered  Office Address:</p>
+        <ul>
+          <li>Amakart Internet Private Limited,Buildings Alyssa, Begonia &Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103,Karnataka, India <br> CIN : K62109KA2012PTC066107</li>
+        </ul>
+      </div>
+    </div>
+    <div class="lower-part">
+      <!-- <div class="divison-line">
+        <div class="inner-divison-line"></div>
+      </div> -->
+      <div class="copyright">
+        <h3>&copy;2023 AmaKart.com</h3>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="main.js"></script>
+</html>

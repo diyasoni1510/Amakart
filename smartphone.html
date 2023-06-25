@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kanit:wght@200;300;400;500;600&family=Lato:wght@400;700;900&family=Lobster+Two:wght@700&family=Montserrat:ital,wght@0,500;0,600;1,600&family=Poppins:wght@200;400;500;600;800&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <title>Smartphone</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>AmaKart</h1>
+      </div>
+      <div class="searchbox">
+        <input
+          type="text"
+          name="items"
+          id="searchItem"
+          placeholder="Search for products"
+        /><i class="fa-solid fa-magnifying-glass"></i>
+      </div> 
+      <div class="cart">
+        <a href="CartPage.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i>Cart</a>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="smartphone.html">Smartphones</a></li>
+        <li><a href="#">Laptop</a></li>
+        <li><a href="#">Headset</a></li>
+        <li><a href="#">Smartwatches</a></li>
+        <li><a href="#">Keyboard & Mouse</a></li>
+      </ul>
+    </nav>
+    <div class="smartphone-container">
+      <div class="sidebar">
+        <div class="sidebar-head">
+          <h3>Filters</h3>
+        </div>
+        <div class="filter-list">
+          <div class="brand">
+            <p class="head">
+              Brand
+              <i class="fa-solid fa-chevron-down" onclick="showItems(1)"></i>
+            </p>
+            <ul id="ul1">
+              <li onclick="checkSquare(1)">
+                <i class="fa-regular fa-square" id="ullii1" onclick="displayBrand(0)"></i>Oppo
+              </li>
+              <li onclick="checkSquare(2)">
+                <i class="fa-regular fa-square" id="ullii2" onclick="displayBrand(1)"></i>POCO
+              </li>
+              <li onclick="checkSquare(3)">
+                <i class="fa-regular fa-square" id="ullii3" onclick="displayBrand(2)"></i>Samsung
+              </li>
+              <li onclick="checkSquare(4)">
+                <i class="fa-regular fa-square" id="ullii4" onclick="displayBrand(3)"></i>Vivo
+              </li>
+              <li onclick="checkSquare(5)">
+                <i class="fa-regular fa-square" id="ullii5" onclick="displayBrand(4)"></i>OnePlus
+              </li>
+              <li onclick="checkSquare(6)">
+                <i class="fa-regular fa-square" id="ullii6" onclick="displayBrand(5)"></i>Realme
+              </li>
+            </ul>
+          </div>
+          <div class="border">
+            <div class="line"></div>
+          </div>
+          <div class="ratings">
+            <p class="head">
+              Customer Ratings
+              <i class="fa-solid fa-chevron-down" onclick="showItems(2)"></i>
+            </p>
+            <ul id="ul2">
+              <li onclick="checkSquare(7)">
+                <i class="fa-regular fa-square" id="ullii7"></i> 4<i
+                  class="fa-solid fa-star"
+                ></i>
+                & above
+              </li>
+              <li onclick="checkSquare(8)">
+                <i class="fa-regular fa-square" id="ullii8"></i> 3<i
+                  class="fa-solid fa-star"
+                ></i>
+                & above
+              </li>
+            </ul>
+          </div>
+          <div class="border">
+            <div class="line"></div>
+          </div>
+          <div class="ram">
+            <p class="head">
+              RAM
+              <i class="fa-solid fa-chevron-down" onclick="showItems(3)"></i>
+            </p>
+            <ul id="ul3">
+              <li onclick="checkSquare(9)">
+                <i class="fa-regular fa-square" id="ullii9"></i> 2 GB
+              </li>
+              <li onclick="checkSquare(10)">
+                <i class="fa-regular fa-square" id="ullii10"></i> 3 GB
+              </li>
+              <li onclick="checkSquare(11)">
+                <i class="fa-regular fa-square" id="ullii11"></i> 4 GB
+              </li>
+              <li onclick="checkSquare(12)">
+                <i class="fa-regular fa-square" id="ullii12"></i> 6 GB
+              </li>
+              <li onclick="checkSquare(13)">
+                <i class="fa-regular fa-square" id="ullii13"></i> 8 GB & above
+              </li>
+            </ul>
+          </div>
+          <div class="border">
+            <div class="line"></div>
+          </div>
+          <div class="Internal-Storage">
+            <p class="head">
+              Internal Storage
+              <i class="fa-solid fa-chevron-down" onclick="showItems(4)"></i>
+            </p>
+            <ul id="ul4">
+              <li onclick="checkSquare(14)">
+                <i class="fa-regular fa-square" id="ullii14"></i> 256 GB & above
+              </li>
+              <li onclick="checkSquare(15)">
+                <i class="fa-regular fa-square" id="ullii15"></i> 128 GB - 255.9
+                GB
+              </li>
+              <li onclick="checkSquare(16)">
+                <i class="fa-regular fa-square" id="ullii16"></i> 64 GB - 127.9
+                GB
+              </li>
+              <li onclick="checkSquare(17)">
+                <i class="fa-regular fa-square" id="ullii17"></i> 32 GB - 65 gb
+              </li>
+              <li onclick="checkSquare(18)">
+                <i class="fa-regular fa-square" id="ullii18"></i> 16 GB - 31 GB
+              </li>
+              <li onclick="checkSquare(19)">
+                <i class="fa-regular fa-square" id="ullii19"></i> 15 GB & less
+              </li>
+            </ul>
+          </div>
+          <div class="border">
+            <div class="line"></div>
+          </div>
+          <div class="discount">
+            <p class="head">
+              Discount
+              <i class="fa-solid fa-chevron-down" onclick="showItems(5)"></i>
+            </p>
+            <ul id="ul5">
+              <li onclick="checkSquare(20)">
+                <i class="fa-regular fa-square" id="ullii20"></i> 50% or more
+              </li>
+              <li onclick="checkSquare(21)">
+                <i class="fa-regular fa-square" id="ullii21"></i> 40% or more
+              </li>
+              <li onclick="checkSquare(22)">
+                <i class="fa-regular fa-square" id="ullii22"></i> 30% or more
+              </li>
+              <li onclick="checkSquare(23)">
+                <i class="fa-regular fa-square" id="ullii23"></i> 20% or more
+              </li>
+              <li onclick="checkSquare(24)">
+                <i class="fa-regular fa-square" id="ullii24"></i> 10% or more
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="smartphone-list">
+        <div class="smartphone-list-head">
+          <p>Showing 1 - 10 of 2000 results for "smartphones" </p>
+        </div>
+        <div class="smartphone-list-body">
+          <div class="smartphone-div">
+            <div class="image">
+              <img src="./Smartphones/poco_c50-removebg-preview.png" alt="">
+            </div>
+            <div class="specifications">
+              <h3 class="POCO"> <a href="POCOC50.html"> POCO C50 (Country green, 32 GB)</a></h3>
+              <p>4.4<i class="fa-solid fa-star"></i></p>
+              <ul>
+                <li>2 GB RAM | 32 GB ROM | Expandable upto 512 GB</li>
+                <li>16.56 cm (6.52 inch) HD+ display</li>
+                <li>8 MP dual camera | 5MP front camera</li>
+                <li>5000 mAh lithium polyrium battery</li>
+              </ul>
+            </div>
+            <div class="price">
+              <h3>&#8377;5,749</h3>
+              <p><del>&#8377;8,999</del> 36% off </p>
+              <p>Free Delivery</p>
+            </div>
+          </div>
+          <!-- <div class="border">
+            <div class="line"></div>
+          </div> -->
+          <div class="smartphone-div">
+            <div class="image">
+              <img src="./Smartphones/one_plus_10r-removebg-preview.png" alt="">
+            </div>
+            <div class="specifications">
+              <h3 class="OnePlus"> <a href="#"> OnePlus 10R 5G (Prime Blue , 128 GB)</a></h3>
+              <p>4.3<i class="fa-solid fa-star"></i></p>
+              <ul>
+                <li>8 GB RAM | 128 GB ROM</li>
+                <li>17.02 cm (6.7 inch) display</li>
+                <li>50MP rear camera</li>
+                <li>5000 mAh battery</li>
+              </ul>
+            </div>
+            <div class="price">
+              <h3>&#8377;35,799</h3>
+              <p><del>&#8377;35,999</del></p>
+              <p>Free Delivery</p>
+            </div>
+          </div>
+          <!-- <div class="border">
+            <div class="line"></div>
+          </div> -->
+          <div class="smartphone-div">
+            <div class="image">
+              <img src="./Smartphones/oppo_a17k_black-removebg-preview.png" alt="">
+            </div>
+            <div class="specifications">
+              <h3 class="Oppo"> <a href="#"> Oppo A17 (Midnight Black, 64 GB)</a></h3>
+              <p>4.4<i class="fa-solid fa-star"></i></p>
+              <ul>
+                <li>4 GB RAM | 64 GB ROM | Expandable upto 2 TB</li>
+                <li>16.6 6 cm (6.56 inch) HD+ display</li>
+                <li>50MP + 0.3MP + 0.3MP | 5MP Front camera</li>
+                <li>5000 mAh lithium-ion polyrium battery</li>
+              </ul>
+            </div>
+            <div class="price">
+              <h3>&#8377;12,499</h3>
+              <p><del>&#8377;14,999</del> 16% off </p>
+              <p>Free Delivery</p>
+            </div>
+          </div>
+          <!-- <div class="border">
+            <div class="line"></div>
+          </div> -->
+          <div class="smartphone-div">
+            <div class="image">
+              <img src="./Smartphones/samsung_galaxy_m33_5g_balck-removebg-preview.png" alt="">
+            </div>
+            <div class="specifications">
+              <h3 class="Samsung"> <a href="#"> Samsung Galaxy M33 5G(Black  , 128 GB)</a></h3>
+              <p>4.4<i class="fa-solid fa-star"></i></p>
+              <ul>
+                <li>8 GB RAM | 128 GB ROM</li>
+                <li>16.76 cm (6.6 inch) display</li>
+                <li>50MP Rear camera</li>
+                <li>6000 mAh battery</li>
+              </ul>
+            </div>
+            <div class="price">
+              <h3>&#8377;5,749</h3>
+              <p><del>&#8377;8,999</del> 36% off </p>
+              <p>Free Delivery</p>
+            </div>
+          </div>
+          <!-- <div class="border">
+            <div class="line"></div>
+          </div> -->
+          <div class="smartphone-div">
+            <div class="image">
+              <img src="./Smartphones/vivo_v27_pro_black-removebg-preview.png" alt="">
+            </div>
+            <div class="specifications">
+              <h3 class="Vivo"> <a href="#"> Vivo T1 44W (Midnight Galaxy, 128 GB)</a></h3>
+              <p>4.4<i class="fa-solid fa-star"></i></p>
+              <ul>
+                <li>4 GB RAM | 128 GB ROM | Expandable upto 1 TB</li>
+                <li>16.36 cm (6.44 inch) Full HD+ AMOLED display</li>
+                <li>50MP + 2MP + 2MP | 16MP Front camera </li>
+                <li>5000 mAh lithium battery</li>
+              </ul>
+            </div>
+            <div class="price">
+              <h3>&#8377;14,499</h3>
+              <p><del>&#8377;19,990</del> 27% off </p>
+              <p>Free Delivery</p>
+            </div>
+          </div>
+          <!-- <div class="border">
+            <div class="line"></div>
+          </div> -->
+          <div class="smartphone-div">
+            <div class="image">
+              <img src="./Smartphones/oppo_reno8t-removebg-preview.png" alt="">
+            </div>
+            <div class="specifications">
+              <h3 class="Oppo"> <a href="#"> Oppo Reno8T 5G (Sunrise Gold, 128 GB)</a></h3>
+              <p>4.3<i class="fa-solid fa-star"></i></p>
+              <ul>
+                <li>8 GB RAM | 128 GB ROM | Expandable upto 1 TB </li>
+                <li>17.02 cm (6.7 inch) Full HD+ display</li>
+                <li>108MP +2MP + 2MP | 32MP front camera</li>
+                <li>4800 mAh lithium-ion polyrium battery</li>
+              </ul>
+            </div>
+            <div class="price">
+              <h3>&#8377;29,999</h3>
+              <p><del>&#8377;38,999</del> 23% off </p>
+              <p>Free Delivery</p>
+            </div>
+          </div>
+          <!-- <div class="border">
+            <div class="line"></div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    
+    <footer>
+      <div class="upper-part">
+        <div class="about">
+          <p class="head">About</p>
+          <ul>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Corporate Information</li>
+            <li>Press</li>
+          </ul>
+        </div>
+        <div class="help">
+          <p class="head">Help</p>
+          <ul>
+            <li>Payments</li>
+            <li>Shipping</li>
+            <li>Cancellation</li>
+            <li>Returns</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div class="policy">
+          <p class="head">Policy</p>
+          <ul>
+            <li>Return Policy</li>
+            <li>Terms of Use</li>
+            <li>Security</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="social">
+          <p class="head">Social</p>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+          </ul> 
+        </div>
+        <div class="divison-line">
+          <div class="inner-divison-line"></div>
+        </div>
+        <div class="mail">
+          <p class="head">Mail Us:</p>
+          <ul>
+            <li>Amakart Internet Private Limited,Buildings Alyssa, Begonia & Clove Embassy Tech Village,Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India</li>
+          </ul>
+        </div>
+        <div class="address">
+          <p class="head">Registered  Office Address:</p>
+          <ul>
+            <li>Amakart Internet Private Limited,Buildings Alyssa, Begonia &Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103,Karnataka, India <br> CIN : K62109KA2012PTC066107</li>
+          </ul>
+        </div>
+      </div>
+      <div class="lower-part">
+        <div class="copyright">
+          <h3>&copy;2023 AmaKart.com</h3>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="smartphone.js"></script>
+  <!-- <script src="main.js"></script> -->
+</html>

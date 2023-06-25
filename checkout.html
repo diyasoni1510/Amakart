@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kanit:wght@200;300;400;500;600&family=Lato:wght@400;700;900&family=Lobster+Two:wght@700&family=Montserrat:ital,wght@0,500;0,600;1,600&family=Poppins:wght@200;400;500;600;800&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="header">
+      <h3>AmaKart <span>.com</span></h3>
+      <h2>Checkout</h2>
+    </div>
+    <div class="checkout-container">
+      <div class="Checkout-info">
+        <div class="login">
+          <div class="info">
+            <h3><span>1</span>LogIn<i class="fa-solid fa-check"></i></h3>
+            <p>+918318015667</p>
+          </div>
+          <div class="btn">
+            <a href="#">CHANGE</a>
+          </div>
+        </div>
+        <div class="Delivery-Address">
+            <div class="info">
+              <h3><span>2</span>Delivery-addresss <span id="deliverycheck"> <i class="fa-solid fa-check "></i></span></h3>
+              <div class="address-1">
+              <p><b>Diya Soni</b> </p>
+              <p>Jain Vatika , Alahpur, Praygaraj, Uttar Pradesh -211006  </p>
+              <button onclick="deliveryCheck()" >Deliver Here</button>
+              </div>
+              <div class="address-2">
+              <p><b>Diya Soni</b></p>
+              <p>Jain Vatika , Alahpur, Praygaraj, Uttar Pradesh -211006  </p>
+              <button onclick="deliveryCheck()">Deliver Here</button>
+              </div>
+              <div class="address-3">
+                <p><span>+</span> <b> Add a new address</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="payment">
+            <div class="info">
+              <h3><span>3</span>Payment Methods <span id="paymentCheck"> <i class="fa-solid fa-check "></i></span></h3>
+              <div class="payment-methods">
+                <div class="atm">
+                  <input type="radio" name="payment-methods" id="atmdebit" onclick="paymentCheck()">
+                  <label for="atm">Pay with Debit/Credit/ATM Card</label>
+                </div>
+                <div class="banking">
+                  <input type="radio" name="payment-methods" id="netbanking" onclick="paymentCheck()">
+                  <label for="netbanking">Net Banking</label>
+                </div>
+                <div class="upi">
+                  <input type="radio" name="payment-methods" id="upiapps" onclick="paymentCheck()">
+                  <label for="upiapps">Other UPI Apps</label>
+                </div>
+                <div class="EMI">
+                  <input type="radio" name="payment-methods" id="emi" onclick="paymentCheck()">
+                  <label for="emi">Other UPI Apps</label>
+                </div>
+                <div class="cashondel">
+                  <input type="radio" name="payment-methods" id="cod" onclick="paymentCheck()">
+                  <label for="cod">Cash on Delivery</label>
+                  <p>Scan & Pay using Amazon app. Cash , UPI , cards are also accepted</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="submitbtn">
+            <a href="orderplaced.html">Place Order</a>
+          </div>
+      </div>
+      <div class="Price-details-invoice">
+        <div class="container">
+          <p class="head"><b>Order Summary</b></p>
+          <div class="lists">
+            <ul class="name">
+              <li>Price(1 Item)</li>
+              <li>Deliver Charges</li>
+              <li>Packaging Charges</li>
+              <li>Promotion Applied</li>
+              <li class="total"><b>Order Total</b></li>
+            </ul>
+            <ul class="price">
+              <li>&#8377;6,499</li>
+              <li>FREE</li>
+              <li>&#8377;29</li>
+              <li>--</li>
+              <li class="total"><b>&#8377;6,528</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="POCOC50.js"></script>
+</html>
